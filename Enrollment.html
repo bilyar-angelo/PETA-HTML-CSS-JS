@@ -1,0 +1,367 @@
+<html>
+
+	<head>
+		
+		<title>San Francisco High School</title>
+
+		<link rel="stylesheet" href="Enrollment.css">
+		<link rel="stylesheet" href="PETA.css">
+
+		<script src="PETA.js"></script>
+                                                                               
+	</head>
+
+	<body>
+
+		<div class="dropdown" id="dropdown">
+			<table>
+				<tr>
+					<td class="dbutton"><button type="button"><a href="Homepage.html">Home</a></button></td>
+				</tr>
+				<tr>
+					<td class="dbutton"><button type="button" onclick="contacts()">Contacts</button></td>
+				</tr>
+				<tr>
+					<td class="dbutton"><button type="button" onclick="overview()">Overview</button></td>
+				</tr>
+				<tr>
+					<td class="dbutton"><button type="button" onclick="about()">About</button></td>
+				</tr>
+			</table>
+		</div>
+
+		<button class="logo" type="button" onclick="dropdown()" id="logo"></button>
+
+		<div class="navbar">
+			<div class="nav">
+				<a href="History.html">History</a>
+		      	<a href="Facilities.html">Facilities</a>
+		    	<a href="Programs.html">Programs</a>
+		    	<a href="Enrollment.html">Enrollment</a>
+		    	<a href="Guidelines.html">Guidelines</a>
+		    </div>
+
+		    <div class="sfhs">
+		    	<a href="Homepage.html">San Francisco High School</a>
+		    </div>
+		</div>
+
+		<div class="contacts" id="contacts">
+			<div>
+				<center><h2>Contact Our School Through:</h2></center>
+				<p>
+					<strong>Facebook:</strong><a href="https://www.facebook.com/sfhs.sslg.directory"> San Francisco High School Directory - SSG</a><br>
+					<strong>Phone:</strong> 09166402087
+				</p>
+
+			</div>
+		</div>
+
+		<div class="overview" id="overview">
+			<div>
+				<center><h2>San Francisco High School Overview</h2><br></center>
+				<p>
+					<strong>Address:</strong> Misamis St., Brgy. Sto. Cristo, Bago Bantay, Quezon City<br>
+					<strong>Founded:</strong> June 9, 1954<br>
+					<strong>Amenities:</strong> Playground, Canteen, Library
+				</p>
+			</div>
+		</div>
+
+		<div class="about" id="about">
+			<div>
+				<center><h2>About This Website</h2>
+				<p>This website is <strong>NOT</strong> the official website of San Francisco High School.<br>It is only a project website made for a Performance Task.</p></center>
+			</div>
+		</div>
+
+		<div class="content">
+
+			<div>
+				<div>
+					<div class="how">
+						<h1>How do I enroll?</h1>
+						<br><br>
+						<h2>On-site Enrollment</h2>
+						<p>For on-site Enrollment, please bring the following requirements:</p>
+						<table>
+							<tr>
+								<td>
+									<ul>
+							            <li>Original Report Card</li>
+							            <li>Permanent Record (Form 137)</li>
+							            <li>Certificate of Good Moral</li>
+							            <li>Photocopy of Certificate of Completion</li>
+						            </ul>
+								</td>
+								<td>
+									<ul>
+							            <li>2pcs. 1x1 colored ID picture</li>
+							            <li>Photocopy of PSA Birth Certificate</li>
+							            <li>Long Brown Envelope</li>
+						            </ul>
+								</td>
+							</tr>
+						</table>
+						<br><br>
+						<h2>Online Enrollment</h2>
+						<ol>
+							<li>Answer the enrollment form seen on the right of your screen.</li>
+							<li>A response will be given to the email you have provided.</li>
+						</ol>
+						<br><br><br><br>
+						<h3>For inquiries, kindly visit our school or message use through our contacts.</h3>
+					</div>
+				</div>
+
+				<div>
+					<div class="enrollcard">
+						<h2>Enrollment Form</h2>
+						<form>
+							<table>
+								<tr>
+									<td colspan="3">
+										<hr>
+									</td>
+								</tr>
+
+                                <tr>
+                                	<td>
+                                		<label for="syear">School Year:</label> <br> 
+                                		<input type="number" name="syear" min="2023" max="2023" value="2023" class="syear">
+                                		 - <input type="number" name="syear" min="2024" max="2024" value="2024" class="syear">
+                                	</td>
+
+                                	<td>
+                                		<label for="glte">Grade Level to Enroll:</label>
+                                		<input type="number" name="glte" min="7" max="12">
+                                	</td>
+
+                                	<td>
+                                		<span>&nbsp;Returning:</span><br>
+                                		<span class="noy">
+                                		    <input type="radio" name="return" class="yon"> <label for="yes">Yes</label> 
+                                		    <input type="radio" name="return" class="yon"> <label for="no">No</label>
+                                	    </span>
+                                	</td>
+                                </tr>
+
+                                <tr>
+                                	<td colspan="3">
+                                		<hr>
+                                		<center><h3>Learner's Information</h3></center>
+                                		<hr>
+                                	</td>
+                                </tr>
+
+								<tr>
+									<td><br><label for="lastname">Last Name:</label> <br> <input type="text" name="lastname"></td>
+									<td><br><label for="Firstname">First Name:</label> <br> <input type="text" name="firstname"></td>
+									<td><br><label for="middlename">Middle Name:</label> <br> <input type="text" name="middlename"></td>
+								</tr>
+
+								<tr>
+									<td><br><label for="bday">Birthdate:</label><br> 
+										<input type="date" name="bday">
+									</td>
+									<td>
+										<br><label for="age">Age:</label><br> 
+										<input type="number" name="age">
+									</td>
+									<td>
+										<br><span>&nbsp;Sex:</span> <br> 
+										<span class="noy">
+											<input type="radio" name="sex" class="yon"><label for="sex">Male</label>
+										    <input type="radio" name="sex" class="yon"><label for="sex">Female</label>
+										</span>
+									</td>
+								</tr>
+								<tr>
+									<td><br><label for="email">Email:</label><br> 
+										<input type="text" name="email">
+									</td>
+									<td><br><label for="number">Contact No.:</label><br> 
+										<input type="text" name="number">
+									</td>
+									<td><br><label for="lrn">LRN:</label><br> 
+										<input type="text" name="lrn">
+									</td>
+								</tr>
+
+								<tr>
+									<td colspan="3">
+										<hr>
+										<h3><center>Address</center></h3>
+										<hr>
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										<br><label for="homeno">House No./Street:</label><br>
+										<input type="number" name="homeno">
+									</td>
+									<td>
+										<br><label for="stname">Street Name:</label><br>
+										<input type="text" name="stname">
+									</td>
+									<td>
+										<br><label for="brgy">Barangay:</label><br>
+										<input type="text" name="brgy">
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										<br><label for="city">Municipality/City:</label><br>
+										<input type="text" name="city">
+									</td>
+									<td>
+										<br><label for="prov">Province:</label><br>
+										<input type="text" name="prov">
+									</td>
+									<td>
+										<br><label for="country">Country:</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <label for="zip">Zip Code:</label><br>
+										<input type="text" name="country" class="counzip"> &nbsp; <input type="text" name="zip" class="counzip">
+									</td>
+								</tr>
+
+								<tr>
+									<td colspan="3">
+										<hr>
+										<center><h3>Parent's/Guardian's Information</h3></center>
+										<hr>
+									</td>
+								</tr>
+
+								<tr>
+									<td colspan="3"><br>
+										<center><span>Father's Name</span></center>
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										<br><label for="flname">Last Name:</label><br>
+										<input type="text" name="flname">
+									</td>
+									<td>
+										<br><label for="ffname">First Name:</label><br>
+										<input type="text" name="ffname">
+									</td>
+									<td>
+										<br><label for="fmname">Mid. Name:</label> <label for="fcno">Contact No.:</label><br>
+										<input type="text" name="fmname" class="counzip"> &nbsp; <input type="text" name="fcno" class="counzip">
+									</td>
+								</tr>
+
+								<tr>
+									<td colspan="3"><br>
+										<center><span>Mother's Maiden Name</span></center>
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										<br><label for="mlname">Last Name:</label><br>
+										<input type="text" name="mlname">
+									</td>
+									<td>
+										<br><label for="mfname">First Name:</label><br>
+										<input type="text" name="mfname">
+									</td>
+									<td>
+										<br><label for="mmname">Mid. Name:</label> <label for="mcno">Contact No.:</label><br>
+										<input type="text" name="mmname" class="counzip"> &nbsp; <input type="text" name="mcno" class="counzip">
+									</td>
+								</tr>
+
+								<tr>
+									<td colspan="3"><br>
+										<center><span>Guardian's Name</span></center>
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										<br><label for="glname">Last Name:</label><br>
+										<input type="text" name="glname">
+									</td>
+									<td>
+										<br><label for="gfname">First Name:</label><br>
+										<input type="text" name="gfname">
+									</td>
+									<td>
+										<br><label for="gmname">Mid. Name:</label> <label for="mcno">Contact No.:</label><br>
+										<input type="text" name="gmname" class="counzip"> &nbsp; <input type="text" name="gcno" class="counzip">
+									</td>
+								</tr>
+
+								<tr>
+									<td colspan="3">
+										<hr>
+										<center><h3>For Returning Learners (Balik-Aral) and Those Who Will Transfer/Move In</h3></center>
+										<hr>
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										<br><label for="lsyc">Last S.Y. Completed:</label><br>
+										<input type="text" name="lsyc">
+									</td>
+									<td>
+										<br><label for="lglc">Last Grd. Lvl. Completed:</label><br>
+										<input type="text" name="lglc">
+									</td>
+									<td>
+										<br><label for="lsa">Last School Attended:</label><br>
+										<input type="text" name="lsa" class="counzip"> &nbsp; <input type="text" name="schoolid" value="School Id" class="counzip">
+									</td>
+								</tr>
+
+								<tr>
+									<td colspan="3">
+										<hr>
+										<center><h3>For Learners in Senior High School</h3></center>
+										<hr>
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										<br><span>&nbsp;Semester:</span> <br> 
+										<span class="noy">
+											&nbsp;&nbsp;<input type="radio" name="1st" class="yon"><label for="sex">1st</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										    <input type="radio" name="2nd" class="yon"><label for="sex">2nd</label>
+										</span>
+									</td>
+									<td>
+										<br><label for="track">Track:</label><br>
+										<input type="text" name="Track">
+									</td>
+									<td>
+										<br><label for="strand">Strand:</label><br>
+										<input type="text" name="strand">
+									</td>
+								</tr>
+
+								<tr>
+									<td colspan="3">
+										<hr>
+										<center>
+										<input type="submit" value="Submit" class="submit">
+									    </center>
+									</td>
+								</tr>
+							</table>					
+						</form>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</body>
+
+</html>

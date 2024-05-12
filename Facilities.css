@@ -1,0 +1,304 @@
+.mapicon{
+	backdrop-filter: blur(5px) brightness(0.75);
+	position: fixed;
+	bottom: 10;
+	left: 10;
+	height: 100px;
+	width: 100px;
+	border-radius: 25px;
+	display: grid;
+	place-items: center;
+	border: 0px;
+	background: rgba(0, 0, 0, 0);
+	cursor: pointer;
+	z-index: 3;
+}
+
+.mapicon:hover{
+	filter: brightness(1.15);
+}
+
+.mapicon > img{
+	height: 80px;
+	width: 80px;
+}
+
+.guidemap{
+	position: fixed;
+	bottom: 100;
+	left: 100;
+	width: 10px;
+	height: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	backdrop-filter: brightness(0.75);
+	opacity: 0;
+	transition: all 0.25s linear 0s;
+}
+
+.guidemap > img{
+	margin: 50px;
+	border-radius: 50px;
+	border: 5px solid #005b3b;
+}
+
+.guidemap > .gmap{
+	height: 600px;
+	width: 700px;
+}
+
+.guidemap > .mapg{
+	height: 400px;
+	width: 500px;
+}
+
+.mapshow{
+	opacity: 1;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	bottom: 0;
+}
+
+.buildings, .facilities, .departments{
+	height: 100%;
+	width: 100%;
+	display: inline-grid;
+	overflow: auto;
+	z-index: 1;
+}
+
+.buildings > div{
+	height: 300px;
+	width: 1000px;
+	border: 3px solid #005b3b;
+	border-radius: 50px;
+	margin-left: 150px;
+	margin-bottom: 40px;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+}
+
+.buildings > div > p > span{
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.buildings > div:hover{
+	filter: brightness(0.8);
+}
+
+.hb{
+	margin-top: 200px;
+	background:linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url("hb.jpg");
+	background-position-y: 350px;
+}
+
+.osb{
+	background:linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url("OldSB.jpg");
+	background-position-y: 400px;
+}
+
+.nsb{
+	background:linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url("NewSB.jpg");
+	background-position-y: 500px;
+}
+
+.depa{
+	background:linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url("DepedA.jpg");
+	background-position-y: 450px;
+}
+
+.depbc{
+	background:linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url("DepedBC.jpg");
+	background-position-y: 450px;
+}
+
+.depd{
+	background:linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url("DepedD.jpg");
+	background-position-y: 450px;
+}
+
+.depe{
+	background:linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url("DepedE2.jpg");
+	background-position-y: 500px;
+}
+
+.pagcor{
+	background:linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url("pagcor.jpg");
+	background-position-y: 450px;
+}
+
+.heri{
+	background:linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url("heritage2.jpg");
+	background-position-y: 450px;
+}
+
+.dao{
+	background:linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url("dao.jpg");
+	background-position-y: 500px;
+}
+
+.narra{
+	background:linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url("Narra.jpg");
+	background-position-y: 450px;
+}
+
+.pime{
+	background:linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url("pimentel.jpg");
+	background-position-y: 550px;
+}
+
+.kama{
+	background:linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url("kamagong.jpg");
+	background-position-y: 400px;
+}
+
+.mola{
+	background:linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url("molave.jpg");
+	background-position-y: 450px;
+}
+
+.hb > p, .nsb > p, .depbc > p, .depe > p, .heri > p, .narra > p, .kama > p{
+	text-align: left;
+	padding-left: 50px;
+}
+
+.osb > p, .depa > p, .depd > p, .pagcor > p, .dao > p, .pime > p,  .mola > p{
+	text-align: right;
+	padding-right: 50px;
+	width: 100%;
+}
+
+.departments, .facilities{
+	position: fixed;
+	opacity: 0;
+	display: grid;
+	grid-template-columns: 22% 22% 22% 34%;
+	grid-template-rows: 40% 30%;
+	padding: 320px 0px 0px 300px;
+}
+
+.departments > div{
+	height: 350px;
+	width: 250px;
+	border-radius: 30px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-size: 350px 250px;
+	text-align: center;
+	display: inline-block;
+	margin: 10px;
+}
+
+.departments > div:hover{
+	box-shadow: 2px 2px 2px#005b3b;
+}
+
+.math{
+	background-image: url("math.jpg");
+	background-color: rgba(0, 112, 72, 1.0);
+}
+
+.filipino{
+	background-image: url("filipino.jpg");
+	background-color: rgba(0, 112, 72, 1.0);
+}
+
+.esp{
+	background-image: url("esp.jpg");
+	background-color: rgba(0, 112, 72, 1.0);
+}
+
+.ap{
+	background-image: url("ap.jpg");
+	background-color: rgba(0, 112, 72, 1.0);
+}
+
+.science{
+	background-image: url("science.jpg");
+	background-color: rgba(0, 112, 72, 1.0);
+}
+
+.english{
+	background-image: url("english.jpg");
+	background-color: rgba(0, 112, 72, 1.0);
+}
+
+.departments > div > h3{
+	margin-top: 265px;
+}
+
+.departments > div > p{
+	font-size: 15px;
+	margin-top: -10px;
+}
+
+.facilities{
+	grid-template-columns: 15% 15% 15% 15% 15% 15%;
+	grid-template-rows: 25% 25% 25%;
+	z-index: 1;
+}
+
+.facilities > div{
+	height: 200px;
+	width: 225px;
+	display: grid;
+	justify-items: center;
+	text-align: center;
+}
+
+.facilities > div > img{
+	height: 150px;
+	width: 225px;
+	border-radius: 10px;
+}
+
+.facilities > div > img:hover{
+	height: 155px;
+	width: 230px;
+}
+
+.fbutton{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+	width: 25%;
+	display: grid;
+	align-items: center;
+	z-index: 1;
+}
+
+.depbutton, .builbutton{
+	position: fixed;
+	right: 0;
+	height: 20%;
+	width: 25%;
+	display: grid;
+	align-items: center;
+	z-index: 1;
+}
+
+.depbutton{
+	top: 600px;
+}
+
+.builbutton{
+	bottom: 600px;
+}
+
+.fbutton > button, .depbutton > button, .builbutton > button{
+	height: 100px;
+	width: 300px;
+	backdrop-filter: brightness(0.7);
+	border: 0px;
+	border-radius: 50px;
+	background: rgba(0, 0, 0, 0);
+	font-size: 30px;
+	font-weight: bold;
+	cursor: pointer;
+}

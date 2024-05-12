@@ -1,0 +1,160 @@
+*{
+	font-family: arial;
+	color: #d8ffd8;
+}
+
+a{
+	text-decoration: none;
+}
+
+body{
+	background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("sbf.jpg") center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.navbar{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 150px;
+	backdrop-filter: blur(5px);
+	line-height: 150px;
+	z-index: 2;
+}
+.nav{
+	display: inline-block;
+	margin-left: 200px;
+}
+
+.navbar > .nav > a, .navbar > .sfhs > a{
+	display: inline;
+	margin: 5px 15px;
+	padding: 5px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.navbar > .nav > a:hover, .navbar > .sfhs > a:hover{
+	color: #00ff70;
+}
+
+.sfhs{
+	position: absolute;
+	top: 0;
+	right: 10;
+	line-height: 150px;
+}
+
+.logo{
+	position: fixed;
+	top: -5;
+	left: 5;
+	background: url("logo1.png");
+	background-size: cover;
+	height: 150px;
+	width: 150px;
+    border: 0px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.dropdown{
+	position: fixed;
+	top: 75;
+	left: 15;
+	width: 130px;
+	background: rgba(0, 112, 72, 1);
+	height: 5px;
+	overflow: hidden;
+	color: #007042;
+	transition: all 0.25s linear 0s;
+	z-index: 3;
+}
+
+.dropdown > table{
+	margin-top: 80px;
+	width: 152.5px;
+	border: 1px solid #005b3b;
+	padding: 10px;
+	border-collapse: collapse;
+}
+
+.dbutton{
+	border: 1px solid #005b3b;
+	padding: 15px;
+}
+
+.dbutton > button{
+	background: rgba(0, 0, 0, 0);
+	border: 0px;
+	width: 100%;
+	text-align: left;
+	cursor: pointer;
+}
+
+.dbutton > button > a{
+	display: inline-block;
+	text-decoration: none;
+	width: 100%;
+}
+
+.dbutton > button:hover, .dbutton > button > a:hover{
+	color: #00ff70;
+}
+.ddown{
+	height: 273px;
+}
+
+.contacts, .overview, .about{
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	backdrop-filter: brightness(75%);
+	display: grid;
+	place-items: center;
+	opacity: 0;
+}
+
+.contacts > div, .overview > div, .about > div{
+	height: 30%;
+	width: 30%;
+	background: rgba(0, 112, 72, 1);
+	display: grid;
+	place-content: center;
+	border-radius: 50px;
+	border: 2px solid #005b3b;
+}
+
+.show{
+	opacity: 1;
+	z-index: 2;
+}
+
+.content{
+	height: 100%;
+	width: 100%;
+	display: grid;
+	place-items: center;
+	overflow: auto;
+}
+
+::-webkit-scrollbar{
+    width:5px;
+}
+::-webkit-scrollbar-thumb {
+    background:#005b3b; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background:#002d1d; 
+}
+
+button:hover{
+	color: #00ff70;
+	cursor: pointer;
+}

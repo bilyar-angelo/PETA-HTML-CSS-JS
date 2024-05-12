@@ -1,0 +1,63 @@
+.progs{
+	position: fixed;
+	top: 160;
+	left: 0;
+	width: 100%;
+}
+
+.jhs, .shs{
+	width: 70%;
+	background: rgba(0, 112, 72, 0.65);
+	backdrop-filter: blur(5px);
+	border: 2px solid #002d1d;
+	border-radius: 50px;
+	padding: 15px;
+	top: 325;
+	position: absolute;
+	height: 50%;
+	overflow: auto;
+}
+
+.jhs > h2, .shs > h2{
+	text-align: center;
+}
+
+.jhs > div, .shs > div{
+	display: inline-block;
+	width: 48%;
+	margin: 5px;
+}
+
+.shs{
+	opacity: 0;
+}
+
+.space{
+	opacity: 0;
+}
+
+.jhsbutton, .shsbutton{
+	position: fixed;
+	bottom: 30;
+	height: 70px;
+	width: 350px;
+	backdrop-filter: brightness(0.7);
+	border: 0px;
+	border-radius: 50px;
+	background: rgba(0, 0, 0, 0);
+	font-size: 30px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.jhsbutton{
+	opacity: 0;
+}
+
+hr{
+	border: 1px solid #002d1d;
+}
+
+.lhr{
+	border: 1px solid #005b3b;
+}
